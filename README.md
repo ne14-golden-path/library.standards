@@ -15,3 +15,4 @@ $ver="1.0.0-alpha-0001"; dotnet pack -c Release -o nu -p:Version=$ver; dotnet nu
   1. Add a Secret called `COMMIT_KEY` containing the private part of the SSH key
   1. Add a Secret called `READ_REPO_PACKAGES` containing the *packages:read* central PAT Token
   1. Ensure csproj in your package project has correct <VersionPrefix> and <RepoUrlStyle> tags
+  1. Ensure repo workflows have read and write permissions: `Repo > Settings > Actions > Workflow permissions`
