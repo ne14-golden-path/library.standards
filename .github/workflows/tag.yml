@@ -3,8 +3,6 @@ on:
   push:
     branches:
     - main
-    paths:
-    - source/**
   workflow_dispatch: # todo: remove this demo trigger!
 jobs:
   tag:
