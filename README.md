@@ -1,2 +1,2 @@
-# library
-A collection of common local assemblies
+# library.standards
+A library for static code analysis
