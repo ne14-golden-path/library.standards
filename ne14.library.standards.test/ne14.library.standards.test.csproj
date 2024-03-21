@@ -27,9 +27,9 @@
 
   <ItemGroup>
     <None Include="ne14.library.standards.test.props" Pack="true" PackagePath="build" />
-    <None Include="../stylecop.json" Pack="true" PackagePath="content" />
     <Content Include="../.analyzerconfig" Pack="true" PackagePath="content" />
     <Content Include=".analyzerconfig_test" Pack="true" PackagePath="content" />
+    <Content Include="../stylecop.json" />
   </ItemGroup>
   
 </Project>

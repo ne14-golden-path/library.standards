@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" Visible="false" />
+    <None Include="../LICENSE" Pack="true" PackagePath="/" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ne14.library.standards" Version="1.0.0-alpha-0020" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<None Include="nuget2.props" Pack="true" PackagePath="build" />
+	<Content Include="nuget2.analyzerconfig" Pack="true" PackagePath="lib" />
+	<GlobalAnalyzerConfigFiles Include="nuget2.analyzerconfig" />
+  </ItemGroup>
+
+</Project>

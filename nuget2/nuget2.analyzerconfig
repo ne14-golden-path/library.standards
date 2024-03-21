@@ -1,0 +1,6 @@
+# Global AnalyzerConfig file
+is_global = true
+global_level = 300
+
+roslynator_max_line_length = 80
+dotnet_diagnostic.RCS1036.severity = warning
