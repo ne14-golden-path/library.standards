@@ -2,20 +2,28 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   
   <PropertyGroup>
-    <AnalysisMode>All</AnalysisMode>
+    <AnalysisMode>all</AnalysisMode>
+	<AnalysisLevel>latest</AnalysisLevel>
 	<EnableNETAnalyzers>true</EnableNETAnalyzers>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
+	<WarningsAsErrors>nullable</WarningsAsErrors> 
   </PropertyGroup>
 
   <ItemGroup>
     <AdditionalFiles Include="$(MSBuildThisFileDirectory)..\content\stylecop.json" Visible="false" />
     <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)..\content\.analyzerconfig" />
+	<None Include="$(MSBuildThisFileDirectory)..\content\.analyzerconfig">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Roslynator.Analyzers" Version="4.12.0"/>
+    <PackageReference Include="Roslynator.Analyzers" Version="4.12.0">
+      <IncludeAssets>compile</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Roslynator.CodeAnalysis.Analyzers" Version="4.12.0"/>
     <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.0"/>
 	<PackageReference Include="SonarAnalyzer.CSharp" Version="9.21.0.86780"/>

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testlib2", "testlib2\testli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget2", "nuget2\nuget2.csproj", "{2CF29BF1-E349-4BD4-B75D-13FD1A42E0DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "standards", "standards\standards.csproj", "{3199B5E1-BF62-4DDC-B24B-BB0D58413211}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{2CF29BF1-E349-4BD4-B75D-13FD1A42E0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CF29BF1-E349-4BD4-B75D-13FD1A42E0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CF29BF1-E349-4BD4-B75D-13FD1A42E0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3199B5E1-BF62-4DDC-B24B-BB0D58413211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3199B5E1-BF62-4DDC-B24B-BB0D58413211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3199B5E1-BF62-4DDC-B24B-BB0D58413211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3199B5E1-BF62-4DDC-B24B-BB0D58413211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,13 +12,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ne14.library.standards" Version="1.0.0-alpha-0020" />
+	<None Include="nuget2.props" Pack="true" PackagePath="build" />
+	<Content Include="nuget2.analyzerconfig" Pack="true" PackagePath="content" />
+	<GlobalAnalyzerConfigFiles Include="nuget2.analyzerconfig" />
+	<EmbeddedResource Include="nuget2.analyzerconfig">
+	  <Link>Files\Raa.config</Link>
+	</EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
-	<None Include="nuget2.props" Pack="true" PackagePath="build" />
-	<Content Include="nuget2.analyzerconfig" Pack="true" PackagePath="lib" />
-	<GlobalAnalyzerConfigFiles Include="nuget2.analyzerconfig" />
+    <PackageReference Include="standards" Version="1.0.0-alpha-0038" />
   </ItemGroup>
 
 </Project>

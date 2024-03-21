@@ -2,7 +2,7 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <ItemGroup>
-    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)..\lib\nuget2.analyzerconfig" />
+    <GlobalAnalyzerConfigFiles Include="Files\Raa.config" />
   </ItemGroup>
 
 </Project>
