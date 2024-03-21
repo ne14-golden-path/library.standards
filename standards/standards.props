@@ -3,16 +3,17 @@
   
   <PropertyGroup>
     <AnalysisMode>all</AnalysisMode>
-	<AnalysisLevel>latest</AnalysisLevel>
-	<EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
-	<WarningsAsErrors>nullable</WarningsAsErrors> 
+    <WarningsAsErrors>nullable</WarningsAsErrors> 
   </PropertyGroup>
 	
   <ItemGroup>
-    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)..\content\.analyzerconfig" />
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)..\content\.analyzerconfig" Link="raa.xxx" />
+    <Content Include="$(MSBuildThisFileDirectory)..\content\.analyzerconfig" Link="raa.yyy" />
   </ItemGroup>
 
 </Project>

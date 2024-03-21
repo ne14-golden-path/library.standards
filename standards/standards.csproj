@@ -2,7 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeSymbols>False</IncludeSymbols>
+    <NoPackageAnalysis>True</NoPackageAnalysis>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="standards.props" Pack="true" PackagePath="build" />
+    <Content Include=".analyzerconfig" Pack="true" PackagePath="content" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Roslynator.Analyzers" Version="4.12.0"/>

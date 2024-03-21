@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="standards" Version="1.0.0-alpha-0038" />
+    <PackageReference Include="standards" Version="1.0.0-alpha-0004" />
   </ItemGroup>
 
 </Project>
