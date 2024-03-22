@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <None Include="*.props" Pack="true" PackagePath="build" />
-		<Content Include="../standards.globalconfig" Pack="true" PackagePath="content" />
+		<Content Include="../*.globalconfig" Pack="true" PackagePath="content" />
   </ItemGroup>
 
 	<ItemGroup>

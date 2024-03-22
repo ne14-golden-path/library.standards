@@ -13,11 +13,11 @@
 
   <ItemGroup>
     <None Include="*.props" Pack="true" PackagePath="build" />
-    <Content Include="nuget2.globalconfig" Pack="true" PackagePath="content" />
+    <Content Include="*.globalconfig" Pack="true" PackagePath="content" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="standards" Version="1.0.0-alpha-0055" />
+    <PackageReference Include="standards" Version="1.0.0-alpha-0060" />
   </ItemGroup>
 
 </Project>
