@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{A72557B3-75E6-4DBF-8C7F-3E84F52126DE}"
 	ProjectSection(SolutionItems) = preProject
-		.analyzerconfig = .analyzerconfig
 		README.md = README.md
 		stylecop.json = stylecop.json
+		standards.globalconfig = standards.globalconfig
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{616071A9-A9F0-48C9-9E15-665952D10D52}"
@@ -17,11 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{
 		.github\workflows\test.yml = .github\workflows\test.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "standards", "standards\standards.csproj", "{3199B5E1-BF62-4DDC-B24B-BB0D58413211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "standards", "standards\standards.csproj", "{3199B5E1-BF62-4DDC-B24B-BB0D58413211}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testlib", "testlib\testlib.csproj", "{FCC25D31-CF31-420C-9B71-730F97706F70}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testlib2", "testlib2\testlib2.csproj", "{CB2423FC-4738-4EA5-985E-3AB818514E5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testlib2", "testlib2\testlib2.csproj", "{5916F87B-F0D7-4F18-AACC-F1AB66102B26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{FCC25D31-CF31-420C-9B71-730F97706F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCC25D31-CF31-420C-9B71-730F97706F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCC25D31-CF31-420C-9B71-730F97706F70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB2423FC-4738-4EA5-985E-3AB818514E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB2423FC-4738-4EA5-985E-3AB818514E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB2423FC-4738-4EA5-985E-3AB818514E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB2423FC-4738-4EA5-985E-3AB818514E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5916F87B-F0D7-4F18-AACC-F1AB66102B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5916F87B-F0D7-4F18-AACC-F1AB66102B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5916F87B-F0D7-4F18-AACC-F1AB66102B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5916F87B-F0D7-4F18-AACC-F1AB66102B26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

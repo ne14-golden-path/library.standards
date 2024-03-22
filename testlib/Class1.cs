@@ -1,7 +1,7 @@
 ﻿namespace testlib
 {
     /// <summary>
-    /// lol.
+    /// ggg.
     /// </summary>
     public class Class1
     {

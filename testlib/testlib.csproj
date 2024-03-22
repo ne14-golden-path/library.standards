@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="standards" Version="1.0.0-alpha-0023" />
+    <PackageReference Include="standards" Version="1.0.0-alpha-0050" />
   </ItemGroup>
 
 </Project>

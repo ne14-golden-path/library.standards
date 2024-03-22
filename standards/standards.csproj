@@ -11,14 +11,21 @@
 
   <ItemGroup>
     <None Include="standards.props" Pack="true" PackagePath="build" />
-    <Content Include=".analyzerconfig" Pack="true" PackagePath="content" />
+	<Content Include="../*.globalconfig" copyToOutput="true">
+	  <IncludeInPackage>true</IncludeInPackage>
+	  <CopyToOutput>true</CopyToOutput>
+	  <BuildAction>Content</BuildAction>
+	  <copyToOutput>true</copyToOutput>
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+	</Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Roslynator.Analyzers" Version="4.12.0"/>
-    <PackageReference Include="Roslynator.CodeAnalysis.Analyzers" Version="4.12.0"/>
-    <PackageReference Include="Roslynator.CodeFixes" Version="4.12.0"/>
-    <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.0"/>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Roslynator.Analyzers" Version="4.12.0"/>
+		<PackageReference Include="Roslynator.CodeAnalysis.Analyzers" Version="4.12.0"/>
+		<PackageReference Include="Roslynator.CodeFixes" Version="4.12.0"/>
+		<PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.0"/>
+	</ItemGroup>
 
 </Project>
