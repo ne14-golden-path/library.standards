@@ -10,15 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="standards.props" Pack="true" PackagePath="build" />
-	<Content Include="../*.globalconfig" copyToOutput="true">
-	  <IncludeInPackage>true</IncludeInPackage>
-	  <CopyToOutput>true</CopyToOutput>
-	  <BuildAction>Content</BuildAction>
-	  <copyToOutput>true</copyToOutput>
-	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  <PackageCopyToOutput>true</PackageCopyToOutput>
-	</Content>
+    <None Include="*.props" Pack="true" PackagePath="build" />
+		<Content Include="../standards.globalconfig" Pack="true" PackagePath="content" />
   </ItemGroup>
 
 	<ItemGroup>

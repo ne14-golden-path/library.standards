@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="standards" Version="1.0.0-alpha-0050" />
+    <PackageReference Include="nuget2" Version="1.0.0-alpha-0052" />
+    <PackageReference Include="standards" Version="1.0.0-alpha-0052" />
   </ItemGroup>
 
 </Project>
